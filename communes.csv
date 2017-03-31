@@ -1,0 +1,347 @@
+region_id;commune_id;name
+1;1;Arica
+1;2;Camarones
+1;3;General Lagos
+1;4;Putre
+2;5;Alto Hospicio
+2;6;Camiña
+2;7;Colchane
+2;8;Huara
+2;9;Iquique
+2;10;Pica
+2;11;Pozo Almonte
+3;12;Antofagasta
+3;13;Calama
+3;14;María Elena
+3;15;Mejillones
+3;16;Ollagüe
+3;17;San Pedro de Atacama
+3;18;Sierra Gorda
+3;19;Taltal
+3;20;Tocopilla
+4;21;Alto del Carmen
+4;22;Caldera
+4;23;Chañaral
+4;24;Copiapó
+4;25;Diego de Almagro
+4;26;Freirina
+4;27;Huasco
+4;28;Tierra Amarilla
+4;29;Vallenar
+5;30;Andacollo
+5;31;Canela
+5;32;Combarbalá
+5;33;Coquimbo
+5;34;Illapel
+5;35;La Higuera
+5;36;La Serena
+5;37;Los Vilos
+5;38;Monte Patria
+5;39;Ovalle
+5;40;Paiguano
+5;41;Punitaqui
+5;42;Río Hurtado
+5;43;Salamanca
+5;44;Vicuña
+6;45;Algarrobo
+6;46;Cabildo
+6;47;Calera
+6;48;Calle Larga
+6;49;Cartagena
+6;50;Casablanca
+6;51;Catemu
+6;52;Concón
+6;53;El Quisco
+6;54;El Tabo
+6;55;Hijuelas
+6;56;Isla de Pascua
+6;57;Juan Fernández
+6;58;La Cruz
+6;59;La Ligua
+6;60;Limache
+6;61;Llaillay
+6;62;Los Andes
+6;63;Nogales
+6;64;Olmué
+6;65;Panquehue
+6;66;Papudo
+6;67;Petorca
+6;68;Puchuncaví
+6;69;Putaendo
+6;70;Quillota
+6;71;Quilpué
+6;72;Quintero
+6;73;Rinconada
+6;74;San Antonio
+6;75;San Esteban
+6;76;San Felipe
+6;77;Santa María
+6;78;Santo Domingo
+6;79;Valparaíso
+6;80;Villa Alemana
+6;81;Viña del Mar
+6;82;Zapallar
+7;83;Chépica
+7;84;Chimbarongo
+7;85;Codegua
+7;86;Coinco
+7;87;Coltauco
+7;88;Doñihue
+7;89;Graneros
+7;90;La Estrella
+7;91;Las Cabras
+7;92;Litueche
+7;93;Lolol
+7;94;Machalí
+7;95;Malloa
+7;96;Marchihue
+7;97;Mostazal
+7;98;Nancagua
+7;99;Navidad
+7;100;Olivar
+7;101;Palmilla
+7;102;Paredones
+7;103;Peralillo
+7;104;Peumo
+7;105;Pichidegua
+7;106;Pichilemu
+7;107;Placilla
+7;108;Pumanque
+7;109;Quinta de Tilcoco
+7;110;Rancagua
+7;111;Rengo
+7;112;Requínoa
+7;113;San Fernando
+7;114;San Vicente
+7;115;Santa Cruz
+8;116;Cauquenes
+8;117;Chanco
+8;118;Colbún
+8;119;Constitución
+8;120;Curepto
+8;121;Curicó
+8;122;Empedrado
+8;123;Hualañé
+8;124;Licantén
+8;125;Linares
+8;126;Longaví
+8;127;Maule
+8;128;Molina
+8;129;Parral
+8;130;Pelarco
+8;131;Pelluhue
+8;132;Pencahue
+8;133;Rauco
+8;134;Retiro
+8;135;Río Claro
+8;136;Romeral
+8;137;Sagrada Familia
+8;138;San Clemente
+8;139;San Javier
+8;140;San Rafael
+8;141;Talca
+8;142;Teno
+8;143;Vichuquén
+8;144;Villa Alegre
+8;145;Yerbas Buenas
+9;146;Alto Bío-Bío
+9;147;Antuco
+9;148;Arauco
+9;149;Bulnes
+9;150;Cabrero
+9;151;Cañete
+9;152;Chiguayante
+9;153;Chillán
+9;154;Chillán Viejo
+9;155;Cobquecura
+9;156;Coelemu
+9;157;Coihueco
+9;158;Concepción
+9;159;Contulmo
+9;160;Coronel
+9;161;Curanilahue
+9;162;El Carmen
+9;163;Florida
+9;164;Hualpén
+9;165;Hualqui
+9;166;Laja
+9;167;Lebu
+9;168;Los Álamos
+9;169;Los Ángeles
+9;170;Lota
+9;171;Mulchén
+9;172;Nacimiento
+9;173;Negrete
+9;174;Ninhue
+9;175;Ñiquén
+9;176;Pemuco
+9;177;Penco
+9;178;Pinto
+9;179;Portezuelo
+9;180;Quilaco
+9;181;Quilleco
+9;182;Quillón
+9;183;Quirihue
+9;184;Ránquil
+9;185;San Carlos
+9;186;San Fabián
+9;187;San Ignacio
+9;188;San Nicolás
+9;189;San Pedro de la Paz
+9;190;San Rosendo
+9;191;Santa Bárbara
+9;192;Santa Juana
+9;193;Talcahuano
+9;194;Tirúa
+9;195;Tomé
+9;196;Treguaco
+9;197;Tucapel
+9;198;Yumbel
+9;199;Yungay
+10;200;Angol
+10;201;Carahue
+10;202;Cholchol
+10;203;Collipulli
+10;204;Cunco
+10;205;Curacautín
+10;206;Curarrehue
+10;207;Ercilla
+10;208;Freire
+10;209;Galvarino
+10;210;Gorbea
+10;211;Lautaro
+10;212;Loncoche
+10;213;Lonquimay
+10;214;Los Sauces
+10;215;Lumaco
+10;216;Melipeuco
+10;217;Nueva Imperial
+10;218;Padre las Casas
+10;219;Perquenco
+10;220;Pitrufquén
+10;221;Pucón
+10;222;Purén
+10;223;Renaico
+10;224;Saavedra
+10;225;Temuco
+10;226;Teodoro Schmidt
+10;227;Toltén
+10;228;Traiguén
+10;229;Victoria
+10;230;Vilcún
+10;231;Villarrica
+11;232;Corral
+11;233;Futrono
+11;234;La Unión
+11;235;Lago Ranco
+11;236;Lanco
+11;237;Los Lagos
+11;238;Máfil
+11;239;Mariquina
+11;240;Paillaco
+11;241;Panguipulli
+11;242;Río Bueno
+11;243;Valdivia
+12;244;Ancud
+12;245;Calbuco
+12;246;Castro
+12;247;Chaitén
+12;248;Chonchi
+12;249;Cochamó
+12;250;Curaco de Vélez
+12;251;Dalcahue
+12;252;Fresia
+12;253;Frutillar
+12;254;Futaleufú
+12;255;Hualaihué
+12;256;Llanquihue
+12;257;Los Muermos
+12;258;Maullín
+12;259;Osorno
+12;260;Palena
+12;261;Puerto Montt
+12;262;Puerto Octay
+12;263;Puerto Varas
+12;264;Puqueldón
+12;265;Purranque
+12;266;Puyehue
+12;267;Queilén
+12;268;Quellón
+12;269;Quemchi
+12;270;Quinchao
+12;271;Río Negro
+12;272;San Juan de La Costa
+12;273;San Pablo
+13;274;Aysen
+13;275;Chile Chico
+13;276;Cisnes
+13;277;Cochrane
+13;278;Coihaique
+13;279;Guaitecas
+13;280;Lago Verde
+13;281;O'Higgins
+13;282;Río Ibáñez
+13;283;Tortel
+14;284;Antártica
+14;285;Cabo de Hornos
+14;286;Laguna Blanca
+14;287;Natales
+14;288;Porvenir
+14;289;Primavera
+14;290;Punta Arenas
+14;291;Río Verde
+14;292;San Gregorio
+14;293;Timaukel
+14;294;Torres del Paine
+15;295;Alhué
+15;296;Buin
+15;297;Calera de Tango
+15;298;Cerrillos
+15;299;Cerro Navia
+15;300;Colina
+15;301;Conchalí
+15;302;Curacaví
+15;303;El Bosque
+15;304;El Monte
+15;305;Estación Central
+15;306;Huechuraba
+15;307;Independencia
+15;308;Isla de Maipo
+15;309;La Cisterna
+15;310;La Florida
+15;311;La Granja
+15;312;La Pintana
+15;313;La Reina
+15;314;Lampa
+15;315;Las Condes
+15;316;Lo Barnechea
+15;317;Lo Espejo
+15;318;Lo Prado
+15;319;Macul
+15;320;Maipú
+15;321;María Pinto
+15;322;Melipilla
+15;323;Ñuñoa
+15;324;Padre Hurtado
+15;325;Paine
+15;326;Pedro Aguirre Cerda
+15;327;Peñaflor
+15;328;Peñalolén
+15;329;Pirque
+15;330;Providencia
+15;331;Pudahuel
+15;332;Puente Alto
+15;333;Quilicura
+15;334;Quinta Normal
+15;335;Recoleta
+15;336;Renca
+15;337;San Bernardo
+15;338;San Joaquín
+15;339;San José de Maipo
+15;340;San Miguel
+15;341;San Pedro
+15;342;San Ramón
+15;343;Santiago
+15;344;Talagante
+15;345;Tiltil
+15;346;Vitacura
