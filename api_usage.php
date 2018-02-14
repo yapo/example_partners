@@ -55,7 +55,7 @@
 				  'body' => 'Este auto le tengo mucho cariño por eso lo vendo caro',
 				  'subject' => 'Volkswagen Escarabajo 1981',
 				  'phone' => '988665432',
-				  'email' => 'sebastian@schibsted.cl',
+				  'email' => 'yapodev@mailinator.com',
 				  'name' => 'Seba Garate',
 				  'region' => '14',
 				  'communes' => '291',
