@@ -56,7 +56,7 @@
 				  'subject' => 'Volkswagen Escarabajo 1981',
 				  'phone' => '988665432',
 				  'email' => 'yapodev@mailinator.com',
-				  'name' => 'Seba Garate',
+				  'name' => 'Yapo developer',
 				  'region' => '14',
 				  'communes' => '291',
 				  'import' => '1',
@@ -70,7 +70,8 @@
 				  'regdate' => '2000',
 				  'cartype' => '1',
 				  'price' => '1000000',
-				);
+				  'plates' => 'XDXD77'
+			  );
 
 	$data = array_merge($data, $imagesIds);
 	$url = $apiDomain . $newAdApp;
