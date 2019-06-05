@@ -120,7 +120,7 @@ Required params for action **insert\_ad** :
     'fuel' - fuel that the car uses
     'import' - Must always be 1
     'external_ad_id' - Your ad identifier
-    'plates' - identification unique for cars (in Chile is called patente)
+    'plates' - unique identifier for cars (in Chile is called patente)
 
 Optional params for action **insert\_ad** :
 
