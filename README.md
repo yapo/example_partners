@@ -119,7 +119,7 @@ Required params for action **insert\_ad** :
     'gearbox' - gear type of the car
     'fuel' - fuel that the car uses
     'import' - Must always be 1
-    'external_ad_idi' - Your ad identifier
+    'external_ad_id' - Your ad identifier
     'plates' - identification unique for cars (in Chile is called patente)
 
 Optional params for action **insert\_ad** :
