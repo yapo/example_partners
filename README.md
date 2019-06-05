@@ -179,7 +179,7 @@ Data types and values for all params
     fuel - integer between 1 and 5 => [1='Bencina', 2='Hibrido', 3='Gas', 4='Diesel', 5='Otros']
     import - integer = 1
     external_ad_id - string regex  ^[A-Za-z0-9_{}-]+   [minlength = 1 ,  maxlentgh = 50]
-    plates - string regex  ^[A-Za-z]{2}([A-Za-z]{2}|[0-9]{2})[0-9]{2}$  [minlength = 5 ('motorcycles') ,  maxlentgh = 6 ('cars', 'trucks')]
+    plates - string regex  ^[A-Za-z]{2}([A-Za-z]{1,2}0?|[0-9]{1,2})[0-9]{2}$  [minlength = 5 ('motorcycles') ,  maxlentgh = 6 ('cars', 'trucks')]
 
 ImportDeletead
 ==============
