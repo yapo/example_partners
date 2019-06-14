@@ -102,7 +102,10 @@ function http_post_fields($url = '', $data = array(), $files = array()) {
 	} else {
 		curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
 	}
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+	curllsetopt($ch, CURLOPT_RETURNTRANSFER, 1);
+	// curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+	// curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 	// curl_setopt($ch, CURLOPT_VERBOSE, true);
 	$result = curl_exec($ch);
 	curl_close($ch);

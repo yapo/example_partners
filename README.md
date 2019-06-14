@@ -119,12 +119,12 @@ Required params for action **insert\_ad** :
     'gearbox' - gear type of the car
     'fuel' - fuel that the car uses
     'import' - Must always be 1
-    'external_ad_id - Your ad identifier
+    'external_ad_id' - Your ad identifier
+    'plates' - unique identifier for cars (in Chile is called patente)
 
 Optional params for action **insert\_ad** :
 
     'image_id(0-N)' - image_id returned by action 'upload_image', one for each uploaded image.
-    'plates' - identification unique for cars (in Chile is called patente)
 
 Response for actions
 
@@ -178,7 +178,8 @@ Data types and values for all params
     gearbox - integer 1 or 2 => [1='Manual', 2='Automatico']
     fuel - integer between 1 and 5 => [1='Bencina', 2='Hibrido', 3='Gas', 4='Diesel', 5='Otros']
     import - integer = 1
-    external_ad_id - string regex  ^[A-Za-z0-9_{}-]+   [minlength = 1 ,  maxlentgh=50]
+    external_ad_id - string regex  ^[A-Za-z0-9_{}-]+   [minlength = 1 ,  maxlentgh = 50]
+    plates - string regex  ^[A-Za-z]{2}([A-Za-z]{1,2}0?|[0-9]{1,2})[0-9]{2}$  [minlength = 5 ('motorcycles') ,  maxlentgh = 6 ('cars', 'trucks')]
 
 ImportDeletead
 ==============
