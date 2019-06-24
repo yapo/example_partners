@@ -103,7 +103,7 @@ function http_post_fields($url = '', $data = array(), $files = array()) {
 		curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
 	}
 
-	curllsetopt($ch, CURLOPT_RETURNTRANSFER, 1);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 	// curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
 	// curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 	// curl_setopt($ch, CURLOPT_VERBOSE, true);
