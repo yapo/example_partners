@@ -168,7 +168,7 @@ Data types and values for all params
     body - string   [maxlength = 2000]
     price - integer  value  between  0  and 2000000000
     image_id0..N - string return by upload_image action
-    phone - string  [minlength = 6 , maxlength = 50]
+    phone - int  [length = 9]
     cartype - integer between 1 and 5 => [1='Automovil', 2='Camioneta', 3='4x4', 4='Convertible', 5='Clasico']
     brand - integer obtained in **Cars Data**
     model - integer obtained in **Cars Data**
