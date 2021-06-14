@@ -2,7 +2,7 @@
 
 	/** How to use the API to delete */
 
-	$apiDomain = 'http://m.yapoqa.cl';
+	$apiDomain = 'https://m.yapo.cl';
 	$apiPartner = 'api partner name';
 	$apiKey = 'api partner key';
 	$newAdApp = '/api/newad.json';
