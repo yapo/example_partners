@@ -151,7 +151,7 @@ This is image_id returned by action *upload_image*, one for each uploaded image.
         "newad": {
             "status": "TRANS_ERROR",
             "subject": "ERROR_SUBJECT_MISSING",
-            "subject_error_label": "Escribe un t��tulo"
+            "subject_error_label": "Escribe un título"
         }
     }
     ```
@@ -166,7 +166,7 @@ This is image_id returned by action *upload_image*, one for each uploaded image.
 
 - subject - string [maxlength = 50]
 - name - string    [maxlength = 50]
-- region - integer between 1 and 15 => [15 = 'Regi�n Metropolitana', 1 = 'XV Arica & Parinacota', 2 = 'I Tarapac�', 3 = 'II Antofagasta', 4 = 'III Atacama', 5 = 'IV Coquimbo', 6 = 'V Valpara��so', 7 = 'VI O\'Higgins', 8 = 'VII Maule', 9 = 'VIII Biob��o', 10 = 'IX Araucan��a', 11 = 'XIV Los R�os', 12 = 'X Los Lagos', 13 = 'XI Ais�n', 14 = 'XII Magallanes & Ant�rtica']
+- region - integer between 1 and 16 (see regions.csv file)
 - email - string   [maxlength = 60]
 - category - integer = 2020
 - type - string [s]

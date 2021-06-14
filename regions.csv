@@ -1,16 +1,17 @@
-id;name
-1;XV Arica & Parinacota
-2;I Tarapac·
-3;II Antofagasta
-4;III Atacama
-5;IV Coquimbo
-6;V ValparaÌso
-7;VI O'Higgins
-8;VII Maule
-9;VIII BiobÌo
-10;IX AraucanÌa
-11;XIV Los RÌos
-12;X Los Lagos
-13;XI AisÈn
-14;XII Magallanes & Ant·rtica
-15;RegiÛn Metropolitana
+id,name
+1, Arica & Parinacota
+2, Tarapac√°
+3, Antofagasta
+4, Atacama
+5, Coquimbo
+6, Valpara√≠so
+7, O'Higgins
+8, Maule
+9, Biob√≠o
+10, Araucan√≠a
+11, Los R√≠os
+12, Los Lagos
+13, Ais√©n
+14, Magallanes & Ant√°rtica
+15, Regi√≥n Metropolitana
+16, √ëuble
