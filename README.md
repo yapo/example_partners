@@ -1,12 +1,11 @@
-# example_partners
+# Example_partners
 Example connection with Yapo Api
 
-Authentication
-==============
+## Authentication
 
 Each request must be made with app\_id (test used in examples below) and
 a hash (e.g. a request to delete an ad can look like this
-<http://m.yapo.cl/api/importdeletead.json?app_id=test&hash=b56af8e790f04ccf387d47631e793f30660a84c4>).
+<https://m.yapo.cl/api/importdeletead.json?app_id=test&hash=b56af8e790f04ccf387d47631e793f30660a84c4>).
 
 The hash is created by concatenating the challenge given by the API and
 your API-key, then hash using
@@ -41,8 +40,13 @@ that isn\'t registered as an authorized API user):
 
     { "authorize": { "status": "NOT A VALID PARTNER" } }
 
-Applications
-============
+## Request Access
+
+Our partners can access to this API.
+
+Contact us [here](https://ayuda.yapo.cl/hc/es/articles/360007190471-Integradores) to become our partner.
+
+# Applications
 
 All applications need to be supplied the following two parameters, on
 top of possible application-specific params:
@@ -51,16 +55,14 @@ top of possible application-specific params:
 -   hash - the sha1 string explained above in the Authentication
     section.
 
-App Newad
-=========
+# App Newad
 
--   **URL** - <http://m.yapo.cl/api/newad.json>
+-   **URL** - <https://m.yapo.cl/api/newad.json>
 -   **Allowed request methods** - \[POST\]
 
 See \[Data types and values section\].
 
-Handling images
----------------
+## Handling images
 
 Images must be uploaded separately using the \'upload\_image\' action.
 When \'upload\_image\' is called, an image\_id is returned.
@@ -77,8 +79,7 @@ Mbyte). If that limit is exceeded, the upload will be unsuccessful and
 the response will have the HTTP status code [413 Request Entity Too
 Large](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.14).
 
-Newad actions
--------------
+## Newad actions
 
 **action**
 
@@ -92,131 +93,138 @@ If there is already an ad with the supplied external\_ad\_id, the
 existing ad will be replaced by the new one. This can be used to update
 existing ads.
 
-Required params
----------------
+### Required params
 
 Required params for action **upload\_image** :
 
-    'image' - a binary file (using Content-type: multipart/form-data)
+-  image - a binary file (using Content-type: multipart/form-data)
 
 Required params for action **insert\_ad** :
 
-    'category' - the id of cars category (2020)
-    'type' - type of ad (s=sell)
-    'subject' - title of ad
-    'name' - name of advertiser
-    'region' - region number of chile
-    'email' - email of advertiser
-    'body' - body of the ad
-    'price' - price of the car
-    'phone' - phone to contact the advertiser
-    'regdate' - car year
-    'brand' - brand of the car
-    'model'- model of the car
-    'cartype' - car type
-    'version' - car version
-    'mileage' - the kilometers of the car
-    'gearbox' - gear type of the car
-    'fuel' - fuel that the car uses
-    'import' - Must always be 1
-    'external_ad_id' - Your ad identifier
-    'plates' - unique identifier for cars (in Chile is called patente)
+- category - the id of cars category (2020)
+- type - type of ad (s=sell)
+- subject - title of ad
+- name - name of advertiser
+- region - region number of chile
+- email - email of advertiser
+- body - body of the ad
+- price - price of the car
+- phone - phone to contact the advertiser
+- regdate - car year
+- brand - brand of the car
+- model- model of the car
+- cartype - car type
+- version - car version
+- mileage - the kilometers of the car
+- gearbox - gear type of the car
+- fuel - fuel that the car uses
+- import - Must always be 1
+- external_ad_id - Your ad identifier
+- plates - unique identifier for cars (in Chile is called patente)
 
 Optional params for action **insert\_ad** :
 
-    'image_id(0-N)' - image_id returned by action 'upload_image', one for each uploaded image.
+-  image_id(0-N)
 
-Response for actions
+This is image_id returned by action *upload_image*, one for each uploaded image.
+
+### Response for actions
 
 **Upload\_image**
 
 -   error response example:
 
-        { "newad": { "status": "IMAGE_ERROR", "message": "ERROR_IMAGE_TYPE"} }
-
+    ```javascript
+    { "newad": { "status": "IMAGE_ERROR", "message": "ERROR_IMAGE_TYPE"} }
+    ```
 -   success response example:
 
-        { "newad": { "image_id": "1756995700.jpg", "status": "OK"} }
-
+    ```javascript
+    { "newad": { "image_id": "1756995700.jpg", "status": "OK"} }
+    ```
 **Insert\_ad**
 
 -   error response example:
 
-        { "newad": {
+    ```javascript
+    {
+        "newad": {
             "status": "TRANS_ERROR",
             "subject": "ERROR_SUBJECT_MISSING",
-            "subject_error_label": "Escribe un tÃ­tulo"
-            }
+            "subject_error_label": "Escribe un t��tulo"
         }
+    }
+    ```
 
 -   success response example:
+    
+    ```javascript
+    { "newad": { "status": "TRANS_OK" }
+    ```
 
-        { "newad": {
-          "status": "TRANS_OK",
-          }
-        }
+### Data types and values for all params
 
-Data types and values for all params
-------------------------------------
+- subject - string [maxlength = 50]
+- name - string    [maxlength = 50]
+- region - integer between 1 and 15 => [15 = 'Regi�n Metropolitana', 1 = 'XV Arica & Parinacota', 2 = 'I Tarapac�', 3 = 'II Antofagasta', 4 = 'III Atacama', 5 = 'IV Coquimbo', 6 = 'V Valpara��so', 7 = 'VI O\'Higgins', 8 = 'VII Maule', 9 = 'VIII Biob��o', 10 = 'IX Araucan��a', 11 = 'XIV Los R�os', 12 = 'X Los Lagos', 13 = 'XI Ais�n', 14 = 'XII Magallanes & Ant�rtica']
+- email - string   [maxlength = 60]
+- category - integer = 2020
+- type - string [s]
+- body - string   [maxlength = 2000]
+- price - integer  value  between  0  and 2000000000
+- image_id0..N - string return by upload_image action
+- phone - integer  [length = 9]
+- cartype - integer between 1 and 5 => [1='Automovil', 2='Camioneta', 3='4x4', 4='Convertible', 5='Clasico']
+- brand - integer obtained in **Cars Data**
+- model - integer obtained in **Cars Data**
+- version - integer obtained in **Cars Data**
+- regdate - integer between 1960 and 2014 (if your car year is less than 1960, use 1900)
+- mileage - integer between 0 and 999999
+- gearbox - integer 1 or 2 => [1='Manual', 2='Automatico']
+- fuel - integer between 1 and 5 => [1='Bencina', 2='Hibrido', 3='Gas', 4='Diesel', 5='Otros']
+- import - integer = 1
+- external_ad_id - string regex  ^[A-Za-z0-9_{}-]+   [minlength = 1 ,  maxlentgh = 50]
+- plates - string regex  ^[A-Za-z]{2}([A-Za-z]{1,2}0?|[0-9]{1,2})[0-9]{2}$  [minlength = 5 ('motorcycles') ,  maxlentgh = 6 ('cars', 'trucks')]
 
-    subject - string [maxlength = 50]
-    name - string    [maxlength = 50]
-    region - integer between 1 and 15 => [15 = 'RegiÃ³n Metropolitana', 1 = 'XV Arica & Parinacota', 2 = 'I TarapacÃ¡', 3 = 'II Antofagasta', 4 = 'III Atacama', 5 = 'IV Coquimbo', 6 = 'V ValparaÃ­so', 7 = 'VI O'Higgins', 8 = 'VII Maule', 9 = 'VIII BiobÃ­o', 10 = 'IX AraucanÃ­a', 11 = 'XIV Los RÃ­os', 12 = 'X Los Lagos', 13 = 'XI AisÃ©n', 14 = 'XII Magallanes & AntÃ¡rtica']
-    email - string   [maxlength = 60]
-    category - integer = 2020
-    type - string [s]
-    body - string   [maxlength = 2000]
-    price - integer  value  between  0  and 2000000000
-    image_id0..N - string return by upload_image action
-    phone - integer  [length = 9]
-    cartype - integer between 1 and 5 => [1='Automovil', 2='Camioneta', 3='4x4', 4='Convertible', 5='Clasico']
-    brand - integer obtained in **Cars Data**
-    model - integer obtained in **Cars Data**
-    version - integer obtained in **Cars Data**
-    regdate - integer between 1960 and 2014 (if your car year is less than 1960, use 1900)
-    mileage - integer between 0 and 999999
-    gearbox - integer 1 or 2 => [1='Manual', 2='Automatico']
-    fuel - integer between 1 and 5 => [1='Bencina', 2='Hibrido', 3='Gas', 4='Diesel', 5='Otros']
-    import - integer = 1
-    external_ad_id - string regex  ^[A-Za-z0-9_{}-]+   [minlength = 1 ,  maxlentgh = 50]
-    plates - string regex  ^[A-Za-z]{2}([A-Za-z]{1,2}0?|[0-9]{1,2})[0-9]{2}$  [minlength = 5 ('motorcycles') ,  maxlentgh = 6 ('cars', 'trucks')]
+# ImportDeletead
 
-ImportDeletead
-==============
-
--   **URL** - <http://m.yapo.cl/api/importdeletead.json>
+-   **URL** - <https://m.yapo.cl/api/importdeletead.json>
 -   **Allowed request methods** - \[POST\]
 
 Used for deleting a specific import ad.
 
 Required params:
 
-    'external_ad_id' - external_ad_id of the ad you want to delete
+ - external_ad_id - external_ad_id of the ad you want to delete
 
 Error response example:
 
+ ```javascript
     { "error": "ERROR_AD_ALREADY_DELETED" ,"status": "TRANS_ERROR" }
+ ```
 
 Success response example:
 
+```javascript
     { "status": "TRANS_OK:ok, ad 9000000 deleted" }
+```
 
-Cars Data
-=========
+# Cars Data
 
--   **URL** - <http://m.yapo.cl/api/cars_data.json>
+-   **URL** - <https://m.yapo.cl/api/cars_data.json>
 -   **Allowed request methods** - \[POST\]
 
 Used for get brands or model of especific brand
 
 Optional params:
 
-    'br' - brand of the car
+ - br - brand of the car
 
 if there is **no brand**, it returns the brand list
 
 -   Success response example:
 
+    ```javascript
         {
              "brands":
                 [{
@@ -249,12 +257,14 @@ if there is **no brand**, it returns the brand list
                     "value": "Zx"
             }]
         }
+    ```
 
 if **brand exists**, it returns the model and versions, you should only
 use the **keys** values
 
 -   Success response example br=90 (volvo):
 
+    ```javascript
         {
         "models": [{
             "key": "1",
@@ -311,3 +321,20 @@ use the **keys** values
             .
         ]
         }
+    ```
+
+# Examples
+
+On this repository you can find some examples of php code to conect with our API
+
+- api_usage.php - publish example
+- deletead.php - delete an Ad example
+
+Use this as base code to implement your own version.
+
+## Consider
+
+- Send the images prev to the ad but in the same day, so avoid your image be deleted
+- Use ISO-8859-1 encoding to send the body and subject, to avoid strange chars on your Ads (utf8_encode and utf8_decode are useful on php language)
+- The published ads will be reflected on the site in a range of time of max 15 mins
+- Use the https protocol to keep connections secure

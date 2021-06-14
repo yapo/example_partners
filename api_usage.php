@@ -2,9 +2,9 @@
 
 	/** How to use the API */
 
-	$apiDomain = 'http://m.yapo.cl';
-	$apiPartner = 'partner_example';
-	$apiKey = 'c82954ecb543135b7b7a7836cd854e0ba29a2727';
+	$apiDomain = 'https://m.yapo.cl';
+	$apiPartner = 'api partner name';
+	$apiKey = 'api partner key';
 	$newAdApp = '/api/newad.json';
 
 	$data = array('app_id' => $apiPartner);
@@ -47,31 +47,32 @@
 
 	// So assuming brand 1 model 1 and version 1, we will insert an ad
 	// Inserting an ad
-	$data = array('app_id' => $apiPartner,
-				  'hash' => $hash,
-				  'action' => 'insert_ad',
-				  'category' => '2020',
-				  'type' => 's',
-				  'body' => 'Este auto le tengo mucho cariño por eso lo vendo caro',
-				  'subject' => 'Volkswagen Escarabajo 1981',
-				  'phone' => '988665432',
-				  'email' => 'yapodev@mailinator.com',
-				  'name' => 'Yapo developer',
-				  'region' => '14',
-				  'communes' => '291',
-				  'import' => '1',
-				  'external_ad_id' => '123abc456',
-				  'mileage' => '200000',
-				  'gearbox' => '1',
-				  'fuel' => '1',
-				  'brand' => '89',
-				  'model' => '14',
-				  'version' => '2',
-				  'regdate' => '2000',
-				  'cartype' => '1',
-				  'price' => '1000000',
-				  'plates' => 'XDXD77'
-			  );
+	$data = array(
+		'app_id' => $apiPartner,
+		'hash' => $hash,
+		'action' => 'insert_ad',
+		'category' => '2020',
+		'type' => 's',
+		'body' => 'Modelo 1300, incluye radio, excelente estado',
+		'subject' => 'Volkswagen Escarabajo 1971',
+		'phone' => '988665432',
+		'email' => 'user@email.com',
+		'name' => 'User name',
+		'region' => '14',
+		'communes' => '291',
+		'import' => '1',
+		'external_ad_id' => '123abc456',
+		'mileage' => '75000',
+		'gearbox' => '1',
+		'fuel' => '1',
+		'brand' => '89',
+		'model' => '14',
+		'version' => '2',
+		'regdate' => '2000',
+		'cartype' => '1',
+		'price' => '7000000',
+		'plates' => 'XDXD77'
+	);
 
 	$data = array_merge($data, $imagesIds);
 	$url = $apiDomain . $newAdApp;
